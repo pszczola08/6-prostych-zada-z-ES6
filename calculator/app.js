@@ -15,5 +15,5 @@ class Calculator {
 
 console.log(`9 + 8 = ${Calculator.add(9, 8)}`)
 console.log(`9 - 8 = ${Calculator.substract(9, 8)}`)
-console.log(`9 * 8 = ${Calculator.add(9, 8)}`)
-console.log(`9 / 8 = ${Calculator.add(9, 8)}`)
+console.log(`9 * 8 = ${Calculator.multiply(9, 8)}`)
+console.log(`9 / 8 = ${Calculator.divide(9, 8)}`)
