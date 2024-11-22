@@ -28,6 +28,9 @@ addProduct(new Product("Product 8", 22, "Category 8"))
 addProduct(new Product("Product 8", 15, "Category 5"))
 addProduct(new Product("Product 9", 1, "Category 5"))
 const filt = filterProducts(10, 100, 'Category 5')
+console.log(filt)
+
 filt.forEach(element => {
-    console.log(element)
+    let {name, price, category} = element
+    console.log(`Name: ${name}, ${price}zł, category: ${category}`)
 });
