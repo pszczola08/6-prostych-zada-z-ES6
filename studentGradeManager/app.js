@@ -14,7 +14,8 @@ class Student {
     }
 }
 
-const student1 = new Student('Uczen', 16, [1, 6, 3, 4, 3])
+let grades = [1, 6, 3, 4, 3]
+const student1 = new Student('Uczen', 16, grades)
 console.log(student1.getAverage())
 student1.addGarde(6)
 student1.addGarde(1)
