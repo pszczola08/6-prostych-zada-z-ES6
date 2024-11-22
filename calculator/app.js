@@ -1,19 +1,27 @@
 class Calculator {
-    static add(a, b) {
-        return a + b
+    constructor(a, b) {
+        this.a = a
+        this.b = b
     }
-    static substract(a, b) {
-        return a - b
+
+    add() {
+        return this.a + this.b
     }
-    static multiply(a, b) {
-        return a * b
+    substract() {
+        return this.a - this.b
     }
-    static divide(a, b) {
-        return a / b
+    multiply() {
+        return this.a * this.b
+    }
+    divide() {
+        return this.a / this.b
     }
 }
 
-console.log(`9 + 8 = ${Calculator.add(9, 8)}`)
-console.log(`9 - 8 = ${Calculator.substract(9, 8)}`)
-console.log(`9 * 8 = ${Calculator.multiply(9, 8)}`)
-console.log(`9 / 8 = ${Calculator.divide(9, 8)}`)
+let numbers = [9, 8]
+const [a, b] = numbers
+const math = new Calculator(a, b)
+console.log(`9 + 8 = ${math.add()}`)
+console.log(`9 - 8 = ${math.substract()}`)
+console.log(`9 * 8 = ${math.multiply()}`)
+console.log(`9 / 8 = ${math.divide()}`)
